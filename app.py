@@ -5,12 +5,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "BROKEN VERSION"
+    return "Hello from Jenkins CI/CD Lab!"
 
 
 @app.route("/health")
 def health():
-    return {"status": "ok"}, 200
+    raise Exception("Simulated critical failure")
 
 
 if __name__ == "__main__":
