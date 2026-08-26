@@ -10,7 +10,7 @@ def home():
 
 @app.route("/health")
 def health():
-    raise Exception("Simulated critical failure")
+    return {"status": "ok"}, 200
 
 
 if __name__ == "__main__":
