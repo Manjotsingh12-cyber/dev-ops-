@@ -19,7 +19,7 @@ pipeline {
             }
         }
 
-        stage('Record Deployment Metadata') {
+        stage('Record Deployment metadata') {
             steps {
                 sh '''
                     [ -f /home/mbrar/current.txt ] && cp /home/mbrar/current.txt /home/mbrar/previous.txt
